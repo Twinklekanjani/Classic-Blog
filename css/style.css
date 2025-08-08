@@ -1,5 +1,6 @@
 :root{
-    --color-heading:#CC9900;
+    --them-color-heading:#CC9900;
+    --them-white-color:#fff;
 }
 
 *{
@@ -26,6 +27,9 @@ html body{
 .d-flex{
     display: flex;
 }
+.d-none{
+    display: none;
+}
 
 .align-item-center{
     align-items: center;
@@ -38,30 +42,28 @@ html body{
 .row{
     display: flex;
     flex-wrap: wrap;
+    row-gap: 30px;
 }
 .col-12{
     width: 100%;
+    padding: 0 15px;
 }
 
 .col-6{
     width: 50%;
+    padding: 0 15px;
 }
 
 .col-4{
     width: 33.33%;
+    padding: 0 15px;
 }
 
 .col-3{
     width: 25%;
     padding: 0 15px;
 }
-.col-40{
-    width: 40%;
-}
 
-.col-60{
-    width: 60%;
-}
 img{
     width: 100%;
     display: block;
@@ -87,7 +89,7 @@ header .navbar .logo{
     font-size: 42px;
     padding: 4px 0;
     margin-right: 1rem;
-    color: var(--color-heading);
+    color: var(--them-color-heading);
 }
 
 header .navbar .logo:hover{
@@ -103,26 +105,26 @@ header .navbar ul li a{
 }
 
 header .navbar ul li a:hover{
-    background-color: #CC9900;
-    color: #fff;
+    background-color: var(--them-color-heading);
+    color: var(--them-white-color);
 }
 
 header .navbar ul li:first-child a{
-    background-color: #CC9900;
-    color: #fff;
+    background-color: var(--them-color-heading);
+    color: var(--them-white-color);
 }
 
 header .navbar .navbar-toggler{
     padding: 8px 16px;
-    color: #CC9900;
+    color: var(--color-heading);
     border: 2px solid #CC9900;
     border-radius: 5px;
-    /* display: none ; */
 }
 /* header section end */
 /* hero section start */
 .hero img{
     height: 500px;
+    background-position: right;
 }
 /* hero section end */
 /* intro section start */
@@ -134,7 +136,7 @@ header .navbar .navbar-toggler{
 .intro .intro-content h2{
     padding-top: 4rem;
     font-size: 35px;
-    color: #CC9900;
+    color: var(--them-color-heading);
     font-weight: lighter;
     margin-bottom: 16px;
 }
@@ -149,10 +151,11 @@ header .navbar .navbar-toggler{
 
 .intro .blog img{
     margin-bottom: 20px;
+    padding: 10px;
 }
 
 .intro .blog h4{
-    color: #CC9900;
+    color: var(--them-color-heading);
     font-weight: 500;
     font-size: 21px;
     margin-bottom: 20px;
@@ -169,16 +172,16 @@ header .navbar .navbar-toggler{
 .category .read{
     font-size: 16px;
     padding: 10px 15px;
-    background-color: #CC9900;
-    color: #fff;
+    background-color: var(--them-color-heading);
+    color: var(--them-white-color);
     border-radius: 5px;
     transition: all 0.3s ease;
 }
 
 .blog a:hover,
 .category .read:hover{
-    color: #fff;
-    background-color: #7c5e03;
+    color: var(--them-white-color);
+    background-color: #a77f05;
 }
 /* intro section end */
 /* category section start */
@@ -187,21 +190,18 @@ header .navbar .navbar-toggler{
 }
 
 .category h3{
-    color: var(--color-heading);
+    color: var(--them-color-heading);
     font-size: 21px;
     font-weight: 500;
 }
 
 .category p{
     color: #8c8c8c;
-    font-size: 14px;
+    font-size: 16px;
     margin: 20px 0;
     line-height: 2;   
 }
 
-.category .category-content{
-    padding: 0 20px;
-}
 .category .category-content ul li{
     line-height: 45px;
 }
@@ -214,14 +214,16 @@ header .navbar .navbar-toggler{
 .category .category-content ul li a:hover{
     text-decoration: none;
 }
-.card{
-    padding: 40px 20px;
-}
+
 .card .image{
     width: 40%;
 }
 .card .card-content{
     padding-left: 10px;
+}
+
+.card .card-content p{
+    font-size: 14px;
 }
 
 /* category section end */
@@ -236,7 +238,7 @@ header .navbar .navbar-toggler{
 }
 
 .footer h3{
-    color: #CC9900;
+    color: var(--them-color-heading);
     margin-bottom: 20px;
     font-size: 24px;
     font-weight: 500;
@@ -277,12 +279,12 @@ header .navbar .navbar-toggler{
 }
 
 .footer .footer-content img{
-    padding: 3px;
+    padding: 5px;
 }
 
 .footer .footer-content .button{
     padding: 10px 20px;
-    color: #fff;
+    color: var(--them-white-color);
     font-size: 12px;
     background-color: #8c8c8c;
     border-radius: 5px;

@@ -3,6 +3,7 @@
     .container{
         max-width: 540px;
     }
+    
 }
 
 /* md */
@@ -10,12 +11,30 @@
     .container{
         max-width: 720px;
     }
+    .col-md-6{
+        width: 50%;
+    }
 }
 
 /* lg */
 @media(min-width:992px){
     .container{
         max-width: 960px;
+    }
+    .d-lg-flex{
+        display: flex;
+    }
+    .navbar-toggler{
+        display: none;
+    }
+    .hero{
+        background-position: center;
+    }
+    .col-lg-3{
+        width: 25%;
+    }
+    .col-lg-6{
+        width: 50%;
     }
 }
 
