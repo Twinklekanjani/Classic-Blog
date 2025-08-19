@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* xl */
 @media(max-width:1399px){
     .container{
@@ -46,4 +47,51 @@
     .container{
         max-width: 100%;
     }
+=======
+/* sm */
+@media(min-width:576px){
+    .container{
+        max-width: 540px;
+    }
+    
+}
+
+/* md */
+@media(min-width:768px){
+    .container{
+        max-width: 720px;
+    }
+    .col-md-6{
+        width: 50%;
+    }
+}
+
+/* lg */
+@media(min-width:992px){
+    .container{
+        max-width: 960px;
+    }
+    .d-lg-flex{
+        display: flex;
+    }
+    .navbar-toggler{
+        display: none;
+    }
+    .hero{
+        background-position: center;
+    }
+    .col-lg-3{
+        width: 25%;
+    }
+    .col-lg-6{
+        width: 50%;
+    }
+}
+
+/* xl */
+@media(min-width:1200px){
+    .container{
+        max-width: 1140px;
+    }
+>>>>>>> 2af4916e6216869b72f82eeb80a78e5fc9a5b4ab
 }
